@@ -254,6 +254,35 @@
 @font-face {font-family: MJXc-TeX-vec-Bx; src: local('MathJax_Vector'); font-weight: bold}
 @font-face {font-family: MJXc-TeX-vec-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/eot/MathJax_Vector-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/woff/MathJax_Vector-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/otf/MathJax_Vector-Bold.otf') format('opentype')}
 </style></head>
+
+<head>
+	<!-- <style>
+	  .arrow-icon {
+		width: 240px;
+		height: 240px;
+		margin: auto;
+	  }
+  
+	  .arrow-icon svg {
+		display: block;
+	  }	  		
+	</style> -->
+	<!-- <style>
+		.content-video-container {
+  			width: 500%;
+  			height: 1000px;
+		}
+	</style> -->
+	<!-- <style>
+		.content-video-container.large:nth-child(2),
+		.content-video-container.large:nth-child(3),
+		.content-video-container.large:nth-child(4) {
+		  margin-left: 10px; /* 调整间距的大小，可以根据需要进行调整 */
+		}
+	</style> -->
+	
+</head>
+
 <body data-new-gr-c-s-check-loaded="14.1107.0" data-gr-ext-installed=""><div id="MathJax_Message" style="display: none;"></div><div class="header" id="top">
 	
 
@@ -293,46 +322,1374 @@
 	<div class="hr"></div>
 	<div>
 		<h2>Dog</h2>
-		<div class="figure-caption">
+
+		<!-- <div class="figure-caption">
 			<p>
 				<span class="bold">TD-MPC</span> solves challenging Dog tasks with <span class="highlight">38-dimensional continuous action spaces</span>. Soft Actor-Critic (SAC) fails to learn any meaningful behavior.
 			</p>
+		</div> -->
+
+		<span style="color: #B73239;font-size: 33px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Training View &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Novel View &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Moving View &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Shaking View &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Novel FOV</span>
+
+		<style>
+			.arrow-icon {
+			  display: flex;
+			  align-items: center;
+			  margin-right: 10px;
+			  transform: translateX(-20px); /* 调整箭头向左偏移的距离 */
+			}
+		  
+			.arrow-icon svg {
+			  width: 70px;
+			  height: 70px;
+			  fill: currentColor;
+			}
+		</style>
+
+
+
+
+<div class="content-video" style="margin-bottom: 10px;margin-top: 50px; display: flex; flex-wrap: nowrap;">
+	<div class="content-video-container" style="display: flex;">				
+		<div class="content-video-frame large" style="flex: 1;">
+		  <video playsinline="" autoplay="" loop="" preload="" muted="" width="50%">
+			<source src="videos/cheetah-run-training.mp4" type="video/mp4">
+		  </video>
 		</div>
-		<div class="content-video" style="margin-bottom: 32px">
-			<div class="content-video-container">
-				<div class="content-video-frame large">
-					<span style="color: #B73239;">Run (SAC)</span>
-					<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-						<source src="videos/dog-run-sac.mp4" type="video/mp4">
-					</video>
+		
+	</div>
+
+	<div class="arrow-icon">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+		  <line x1="0" y1="30" x2="30" y2="30"></line>
+		  <polyline points="30 25 50 30 30 35"></polyline>
+		</svg>
+	</div>
+	
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/cheetah-run-fixed-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/cheetah-run-fixed-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/cheetah-run-moving-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/cheetah-run-moving-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/cheetah-run-shaking-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/cheetah-run-shaking-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/cheetah-run-fov-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/cheetah-run-fov-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+
+</div>
+
+<div class="content-video" style="margin-bottom: 10px; display: flex; flex-wrap: nowrap;">
+	<div class="content-video-container" style="display: flex;">
+		<div class="content-video-frame large" style="flex: 1;">
+		  <video playsinline="" autoplay="" loop="" preload="" muted="" width="50%">
+			<source src="videos/walker-walk-training.mp4" type="video/mp4">
+		  </video>
+		</div>
+		
+	</div>
+
+	<div class="arrow-icon">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+		  <line x1="0" y1="30" x2="30" y2="30"></line>
+		  <polyline points="30 25 50 30 30 35"></polyline>
+		</svg>
+	</div>
+	
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/walker-walk-fixed-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/walker-walk-fixed-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/walker-walk-moving-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/walker-walk-moving-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/walker-walk-shaking-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/walker-walk-shaking-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/walker-walk-fov-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/walker-walk-fov-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+	
+</div>
+
+<div class="content-video" style="margin-bottom: 10px; display: flex; flex-wrap: nowrap;">
+	<div class="content-video-container" style="display: flex;">
+		<div class="content-video-frame large" style="flex: 1;">
+		  <video playsinline="" autoplay="" loop="" preload="" muted="" width="50%">
+			<source src="videos/walker-stand-training.mp4" type="video/mp4">
+		  </video>
+		</div>
+		
+	</div>
+
+	<div class="arrow-icon">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+		  <line x1="0" y1="30" x2="30" y2="30"></line>
+		  <polyline points="30 25 50 30 30 35"></polyline>
+		</svg>
+	</div>
+	
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/walker-stand-fixed-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/walker-stand-fixed-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/walker-stand-moving-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/walker-stand-moving-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/walker-stand-shaking-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/walker-stand-shaking-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/walker-stand-fov-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/walker-stand-fov-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+	
+</div>
+
+<div class="content-video" style="margin-bottom: 10px; display: flex; flex-wrap: nowrap;">
+	<div class="content-video-container" style="display: flex;">
+		<div class="content-video-frame large" style="flex: 1;">
+		  <video playsinline="" autoplay="" loop="" preload="" muted="" width="50%">
+			<source src="videos/walker-run-training.mp4" type="video/mp4">
+		  </video>
+		</div>
+		
+	</div>
+
+	<div class="arrow-icon">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+		  <line x1="0" y1="30" x2="30" y2="30"></line>
+		  <polyline points="30 25 50 30 30 35"></polyline>
+		</svg>
+	</div>
+	
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/walker-run-fixed-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/walker-run-fixed-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/walker-run-moving-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/walker-run-moving-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/walker-run-shaking-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/walker-run-shaking-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/walker-run-fov-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/walker-run-fov-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+	
+</div>
+
+<div class="content-video" style="margin-bottom: 10px; display: flex; flex-wrap: nowrap;">
+	<div class="content-video-container" style="display: flex;">
+		<div class="content-video-frame large" style="flex: 1;">
+		  <video playsinline="" autoplay="" loop="" preload="" muted="" width="50%">
+			<source src="videos/cup-catch-training.mp4" type="video/mp4">
+		  </video>
+		</div>
+		
+	</div>
+
+	<div class="arrow-icon">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+		  <line x1="0" y1="30" x2="30" y2="30"></line>
+		  <polyline points="30 25 50 30 30 35"></polyline>
+		</svg>
+	</div>
+	
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/cup-catch-fixed-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/cup-catch-fixed-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/cup-catch-moving-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/cup-catch-moving-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/cup-catch-shaking-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/cup-catch-shaking-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/cup-catch-fov-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/cup-catch-fov-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+	
+</div>
+
+<div class="content-video" style="margin-bottom: 10px; display: flex; flex-wrap: nowrap;">
+	<div class="content-video-container" style="display: flex;">
+		<div class="content-video-frame large" style="flex: 1;">
+		  <video playsinline="" autoplay="" loop="" preload="" muted="" width="50%">
+			<source src="videos/finger-spin-training.mp4" type="video/mp4">
+		  </video>
+		</div>
+		
+	</div>
+
+	<div class="arrow-icon">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+		  <line x1="0" y1="30" x2="30" y2="30"></line>
+		  <polyline points="30 25 50 30 30 35"></polyline>
+		</svg>
+	</div>
+	
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/finger-spin-fixed-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/finger-spin-fixed-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/finger-spin-moving-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/finger-spin-moving-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/finger-spin-shaking-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/finger-spin-shaking-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/finger-spin-fov-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/finger-spin-fov-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+	
+</div>
+
+<div class="content-video" style="margin-bottom: 10px; display: flex; flex-wrap: nowrap;">
+	<div class="content-video-container" style="display: flex;">
+		<div class="content-video-frame large" style="flex: 1;">
+		  <video playsinline="" autoplay="" loop="" preload="" muted="" width="50%">
+			<source src="videos/finger-turn-easy-training.mp4" type="video/mp4">
+		  </video>
+		</div>
+		
+	</div>
+
+	<div class="arrow-icon">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+		  <line x1="0" y1="30" x2="30" y2="30"></line>
+		  <polyline points="30 25 50 30 30 35"></polyline>
+		</svg>
+	</div>
+	
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/finger-turn-easy-fixed-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/finger-turn-easy-fixed-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/finger-turn-easy-moving-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/finger-turn-easy-moving-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/finger-turn-easy-shaking-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/finger-turn-easy-shaking-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/finger-turn-easy-fov-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/finger-turn-easy-fov-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+	
+</div>
+
+<div class="content-video" style="margin-bottom: 10px; display: flex; flex-wrap: nowrap;">
+	<div class="content-video-container" style="display: flex;">
+		<div class="content-video-frame large" style="flex: 1;">
+		  <video playsinline="" autoplay="" loop="" preload="" muted="" width="50%">
+			<source src="videos/finger-turn-hard-training.mp4" type="video/mp4">
+		  </video>
+		</div>
+		
+	</div>
+
+	<div class="arrow-icon">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+		  <line x1="0" y1="30" x2="30" y2="30"></line>
+		  <polyline points="30 25 50 30 30 35"></polyline>
+		</svg>
+	</div>
+	
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/finger-turn-hard-fixed-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/finger-turn-hard-fixed-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/finger-turn-hard-moving-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/finger-turn-hard-moving-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/finger-turn-hard-shaking-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/finger-turn-hard-shaking-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/finger-turn-hard-fov-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/finger-turn-hard-fov-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+	
+</div>
+
+<div class="content-video" style="margin-bottom: 10px; display: flex; flex-wrap: nowrap;">
+	<div class="content-video-container" style="display: flex;">
+		<div class="content-video-frame large" style="flex: 1;">
+		  <video playsinline="" autoplay="" loop="" preload="" muted="" width="50%">
+			<source src="videos/pendulum-swingup-training.mp4" type="video/mp4">
+		  </video>
+		</div>
+		
+	</div>
+
+	<div class="arrow-icon">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+		  <line x1="0" y1="30" x2="30" y2="30"></line>
+		  <polyline points="30 25 50 30 30 35"></polyline>
+		</svg>
+	</div>
+	
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/pendulum-swingup-fixed-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/pendulum-swingup-fixed-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/pendulum-swingup-moving-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/pendulum-swingup-moving-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/pendulum-swingup-shaking-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/pendulum-swingup-shaking-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/pendulum-swingup-fov-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/pendulum-swingup-fov-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+	
+</div>
+
+<div class="content-video" style="margin-bottom: 10px; display: flex; flex-wrap: nowrap;">
+	<div class="content-video-container" style="display: flex;">
+		<div class="content-video-frame large" style="flex: 1;">
+		  <video playsinline="" autoplay="" loop="" preload="" muted="" width="50%">
+			<source src="videos/reach-easy-training.mp4" type="video/mp4">
+		  </video>
+		</div>
+		
+	</div>
+
+	<div class="arrow-icon">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+		  <line x1="0" y1="30" x2="30" y2="30"></line>
+		  <polyline points="30 25 50 30 30 35"></polyline>
+		</svg>
+	</div>
+	
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/reach-easy-fixed-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/reach-easy-fixed-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/reach-easy-moving-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/reach-easy-moving-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/reach-easy-shaking-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/reach-easy-shaking-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/reach-easy-fov-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/reach-easy-fov-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+	
+</div>
+
+<div class="content-video" style="margin-bottom: 10px; display: flex; flex-wrap: nowrap;">
+	<div class="content-video-container" style="display: flex;">
+		<div class="content-video-frame large" style="flex: 1;">
+		  <video playsinline="" autoplay="" loop="" preload="" muted="" width="50%">
+			<source src="videos/xarm-hammerall-training.mp4" type="video/mp4">
+		  </video>
+		</div>
+		
+	</div>
+
+	<div class="arrow-icon">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+		  <line x1="0" y1="30" x2="30" y2="30"></line>
+		  <polyline points="30 25 50 30 30 35"></polyline>
+		</svg>
+	</div>
+	
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-hammerall-fixed-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-hammerall-fixed-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-hammerall-moving-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-hammerall-moving-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-hammerall-shaking-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-hammerall-shaking-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-hammerall-fov-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-hammerall-fov-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="content-video" style="margin-bottom: 10px;margin-top: 50px; display: flex; flex-wrap: nowrap;">
+	<div class="content-video-container" style="display: flex;">				
+		<div class="content-video-frame large" style="flex: 1;">
+		  <video playsinline="" autoplay="" loop="" preload="" muted="" width="50%">
+			<source src="videos/xarm-reach-training.mp4" type="video/mp4">
+		  </video>
+		</div>
+		
+	</div>
+
+	<div class="arrow-icon">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+		  <line x1="0" y1="30" x2="30" y2="30"></line>
+		  <polyline points="30 25 50 30 30 35"></polyline>
+		</svg>
+	</div>
+	
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-reach-fixed-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-reach-fixed-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-reach-moving-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-reach-moving-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-reach-shaking-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-reach-shaking-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-reach-fov-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-reach-fov-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+
+</div>
+
+<div class="content-video" style="margin-bottom: 10px; display: flex; flex-wrap: nowrap;">
+	<div class="content-video-container" style="display: flex;">
+		<div class="content-video-frame large" style="flex: 1;">
+		  <video playsinline="" autoplay="" loop="" preload="" muted="" width="50%">
+			<source src="videos/xarm-push-training.mp4" type="video/mp4">
+		  </video>
+		</div>
+		
+	</div>
+
+	<div class="arrow-icon">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+		  <line x1="0" y1="30" x2="30" y2="30"></line>
+		  <polyline points="30 25 50 30 30 35"></polyline>
+		</svg>
+	</div>
+	
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-push-fixed-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-push-fixed-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-push-moving-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-push-moving-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-push-shaking-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-push-shaking-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-push-fov-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-push-fov-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+	
+</div>
+
+<div class="content-video" style="margin-bottom: 10px; display: flex; flex-wrap: nowrap;">
+	<div class="content-video-container" style="display: flex;">
+		<div class="content-video-frame large" style="flex: 1;">
+		  <video playsinline="" autoplay="" loop="" preload="" muted="" width="50%">
+			<source src="videos/xarm-pegbox-training.mp4" type="video/mp4">
+		  </video>
+		</div>
+		
+	</div>
+
+	<div class="arrow-icon">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+		  <line x1="0" y1="30" x2="30" y2="30"></line>
+		  <polyline points="30 25 50 30 30 35"></polyline>
+		</svg>
+	</div>
+	
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-pegbox-fixed-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-pegbox-fixed-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-pegbox-moving-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-pegbox-moving-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-pegbox-shaking-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-pegbox-shaking-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-pegbox-fov-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-pegbox-fov-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+	
+</div>
+
+<div class="content-video" style="margin-bottom: 10px; display: flex; flex-wrap: nowrap;">
+	<div class="content-video-container" style="display: flex;">
+		<div class="content-video-frame large" style="flex: 1;">
+		  <video playsinline="" autoplay="" loop="" preload="" muted="" width="50%">
+			<source src="videos/xarm-hammerall-training.mp4" type="video/mp4">
+		  </video>
+		</div>
+		
+	</div>
+
+	<div class="arrow-icon">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+		  <line x1="0" y1="30" x2="30" y2="30"></line>
+		  <polyline points="30 25 50 30 30 35"></polyline>
+		</svg>
+	</div>
+	
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-hammerall-fixed-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-hammerall-fixed-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-hammerall-moving-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-hammerall-moving-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-hammerall-shaking-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-hammerall-shaking-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-hammerall-fov-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-hammerall-fov-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+		<div class="content-video" style="margin-bottom: 10px;margin-top: 50px; display: flex; flex-wrap: nowrap;">
+			<div class="content-video-container" style="display: flex;">				
+				<div class="content-video-frame large" style="flex: 1;">
+				  <video playsinline="" autoplay="" loop="" preload="" muted="" width="50%">
+					<source src="videos/adroit-door-training.mp4" type="video/mp4">
+				  </video>
 				</div>
-				<div class="content-video-frame large">
-					<span>Run (ours)</span>
-					<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-						<source src="videos/dog-run.mp4" type="video/mp4">
-					</video>
-				</div>
+				
 			</div>
+
+			<div class="arrow-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+				  <line x1="0" y1="30" x2="30" y2="30"></line>
+				  <polyline points="30 25 50 30 30 35"></polyline>
+				</svg>
+			</div>
+			
+		  
+			<div class="content-video-container" style="display: flex; margin-right: 10px;">
+			  <div class="content-video-frame large" style="flex: 1;">
+				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/adroit-door-fixed-f.mp4" type="video/mp4">
+				</video>
+			  </div>
+			  <div class="content-video-frame large" style="flex: 1;">
+				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/adroit-door-fixed-s.mp4" type="video/mp4">
+				</video>
+			  </div>
+			</div>
+		  
+			<div class="content-video-container" style="display: flex; margin-right: 10px;">
+			  <div class="content-video-frame large" style="flex: 1;">
+				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/adroit-door-moving-f.mp4" type="video/mp4">
+				</video>
+			  </div>
+			  <div class="content-video-frame large" style="flex: 1;">
+				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/adroit-door-moving-s.mp4" type="video/mp4">
+				</video>
+			  </div>
+			</div>
+		  
+			<div class="content-video-container" style="display: flex; margin-right: 10px;">
+			  <div class="content-video-frame large" style="flex: 1;">
+				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/adroit-door-shaking-f.mp4" type="video/mp4">
+				</video>
+			  </div>
+			  <div class="content-video-frame large" style="flex: 1;">
+				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/adroit-door-shaking-s.mp4" type="video/mp4">
+				</video>
+			  </div>
+			</div>
+		  
+			<div class="content-video-container" style="display: flex; margin-right: 10px;">
+			  <div class="content-video-frame large" style="flex: 1;">
+				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/adroit-door-fov-f.mp4" type="video/mp4">
+				</video>
+			  </div>
+			  <div class="content-video-frame large" style="flex: 1;">
+			    <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/adroit-door-fov-s.mp4" type="video/mp4">
+			    </video>
+			  </div>
+		    </div>
+
 		</div>
+
+		<div class="content-video" style="margin-bottom: 10px; display: flex; flex-wrap: nowrap;">
+			<div class="content-video-container" style="display: flex;">
+				<div class="content-video-frame large" style="flex: 1;">
+				  <video playsinline="" autoplay="" loop="" preload="" muted="" width="50%">
+					<source src="videos/adroit-hammer-training.mp4" type="video/mp4">
+				  </video>
+				</div>
+				
+			</div>
+
+			<div class="arrow-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+				  <line x1="0" y1="30" x2="30" y2="30"></line>
+				  <polyline points="30 25 50 30 30 35"></polyline>
+				</svg>
+			</div>
+			
+		  
+			<div class="content-video-container" style="display: flex; margin-right: 10px;">
+			  <div class="content-video-frame large" style="flex: 1;">
+				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/adroit-hammer-fixed-f.mp4" type="video/mp4">
+				</video>
+			  </div>
+			  <div class="content-video-frame large" style="flex: 1;">
+				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/adroit-hammer-fixed-s.mp4" type="video/mp4">
+				</video>
+			  </div>
+			</div>
+		  
+			<div class="content-video-container" style="display: flex; margin-right: 10px;">
+			  <div class="content-video-frame large" style="flex: 1;">
+				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/adroit-hammer-moving-f.mp4" type="video/mp4">
+				</video>
+			  </div>
+			  <div class="content-video-frame large" style="flex: 1;">
+				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/adroit-hammer-moving-s.mp4" type="video/mp4">
+				</video>
+			  </div>
+			</div>
+		  
+			<div class="content-video-container" style="display: flex; margin-right: 10px;">
+			  <div class="content-video-frame large" style="flex: 1;">
+				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/adroit-hammer-shaking-f.mp4" type="video/mp4">
+				</video>
+			  </div>
+			  <div class="content-video-frame large" style="flex: 1;">
+				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/adroit-hammer-shaking-s.mp4" type="video/mp4">
+				</video>
+			  </div>
+			</div>
+		  
+			<div class="content-video-container" style="display: flex; margin-right: 10px;">
+			  <div class="content-video-frame large" style="flex: 1;">
+				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/adroit-hammer-fov-f.mp4" type="video/mp4">
+				</video>
+			  </div>
+			  <div class="content-video-frame large" style="flex: 1;">
+			    <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/adroit-hammer-fov-s.mp4" type="video/mp4">
+			    </video>
+			  </div>
+		    </div>
+			
+		</div>
+
+		<div class="content-video" style="margin-bottom: 10px; display: flex; flex-wrap: nowrap;">
+			<div class="content-video-container" style="display: flex;">
+				<div class="content-video-frame large" style="flex: 1;">
+				  <video playsinline="" autoplay="" loop="" preload="" muted="" width="50%">
+					<source src="videos/adroit-pen-training.mp4" type="video/mp4">
+				  </video>
+				</div>
+				
+			</div>
+
+			<div class="arrow-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+				  <line x1="0" y1="30" x2="30" y2="30"></line>
+				  <polyline points="30 25 50 30 30 35"></polyline>
+				</svg>
+			</div>
+			
+		  
+			<div class="content-video-container" style="display: flex; margin-right: 10px;">
+			  <div class="content-video-frame large" style="flex: 1;">
+				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/adroit-pen-fixed-f.mp4" type="video/mp4">
+				</video>
+			  </div>
+			  <div class="content-video-frame large" style="flex: 1;">
+				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/adroit-pen-fixed-s.mp4" type="video/mp4">
+				</video>
+			  </div>
+			</div>
+		  
+			<div class="content-video-container" style="display: flex; margin-right: 10px;">
+			  <div class="content-video-frame large" style="flex: 1;">
+				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/adroit-pen-moving-f.mp4" type="video/mp4">
+				</video>
+			  </div>
+			  <div class="content-video-frame large" style="flex: 1;">
+				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/adroit-pen-moving-s.mp4" type="video/mp4">
+				</video>
+			  </div>
+			</div>
+		  
+			<div class="content-video-container" style="display: flex; margin-right: 10px;">
+			  <div class="content-video-frame large" style="flex: 1;">
+				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/adroit-pen-shaking-f.mp4" type="video/mp4">
+				</video>
+			  </div>
+			  <div class="content-video-frame large" style="flex: 1;">
+				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/adroit-pen-shaking-s.mp4" type="video/mp4">
+				</video>
+			  </div>
+			</div>
+		  
+			<div class="content-video-container" style="display: flex; margin-right: 10px;">
+			  <div class="content-video-frame large" style="flex: 1;">
+				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/adroit-pen-fov-f.mp4" type="video/mp4">
+				</video>
+			  </div>
+			  <div class="content-video-frame large" style="flex: 1;">
+			    <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/adroit-pen-fov-s.mp4" type="video/mp4">
+			    </video>
+			  </div>
+		    </div>
+			
+		</div>
+
+
+		
+
+
+
+
+
 		<div class="links">
 			<a href="https://nicklashansen.github.io/td-mpc/#" class="btn" onclick="toggle(&#39;dog&#39;); return false;">Show more</a>
 		</div>
-		<div id="dog" class="content-video hidden-content">
+		<!-- <div id="dog" class="content-video hidden-content">
 			<div class="content-video-container">
 				<div class="content-video-frame large">
 					<span>Walk</span>
 					<video playsinline="" autoplay="" loop="" muted="" width="100%">
-						<source src="videos/dog-walk.mp4" type="video/mp4">
+						<source src="videos/adroit-door-fixed-f.mp4" type="video/mp4">
 					</video>
 				</div>
 				<div class="content-video-frame large">
 					<span>Trot</span>
 					<video playsinline="" autoplay="" loop="" muted="" width="100%">
-						<source src="videos/dog-trot.mp4" type="video/mp4">
+						<source src="videos/adroit-door-fixed-f.mp4" type="video/mp4">
 					</video>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 	<div class="hr"></div>
 	<div>
