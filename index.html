@@ -314,12 +314,18 @@
 	<div>
 		<h2>Abstract</h2>
 		<p class="abstract">
-			While agents trained by Reinforcement Learning (RL) can solve challenging tasks such as locomotion and manipulation from visual observations (usually a fixed view), 
-			generalizing to unseen views is known to be hard. 
-			In this work, we propose a simple yet effective method to adapt visual <span class="bold">Mo</span>del-based policies for generalizing to unseen <span class="bold">Vie</span>ws (<span class="bold">MoVie</span>) during test time. Our method requires no reward signal and still provides promising generalizations with only limited interactions.
+			Visual Reinforcement Learning (RL) agents trained on limited views face significant challenges in generalizing their learned abilities to unseen views. 
+			This inherent difficulty is known as the problem of <em>view generalization</em>. 
+			In this work, we systematically categorize this fundamental problem into four distinct and highly challenging scenarios that closely resemble real-world situations. 
+			Subsequently, we propose a straightforward yet effective approach to enable successful adaptation of visual \textbf{Mo}del-based policies for \textbf{Vie}w generalization  (\textbf{MoVie}) during test time,  
+			without any need for explicit reward signals and any modification during training time. 
+			Our method demonstrates substantial advancements across all four scenarios encompassing a total of \textbf{18} tasks sourced from DMControl, xArm, and Adroit, 
+			with a relative improvement of $\mathbf{33\%}$, $\mathbf{86\%}$, and $\mathbf{152\%}$ respectively. 
+			The superior results highlight the immense potential of our approach for real-world robotics applications.
+			 <span class="bold">Mo</span>del-based policies for generalizing to unseen <span class="bold">Vie</span>ws (<span class="bold">MoVie</span>) during test time. Our method requires no reward signal and still provides promising generalizations with only limited interactions.
 		</p>
 	</div>
-
+	<div class="figure" style="height: 250px; background-image: url(figures/bar_chart.png);"></div>
 	<div class="hr"></div>
 	<div>
 		<h2>DM-Control</h2>
