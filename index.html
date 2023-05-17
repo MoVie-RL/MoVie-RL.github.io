@@ -319,9 +319,10 @@
 			In this work, we propose a simple yet effective method to adapt visual <span class="bold">Mo</span>del-based policies for generalizing to unseen <span class="bold">Vie</span>ws (<span class="bold">MoVie</span>) during test time. Our method requires no reward signal and still provides promising generalizations with only limited interactions.
 		</p>
 	</div>
+
 	<div class="hr"></div>
 	<div>
-		<h2>Dog</h2>
+		<h2>DM-Control</h2>
 
 		<!-- <div class="figure-caption">
 			<p>
@@ -329,7 +330,6 @@
 			</p>
 		</div> -->
 
-		<span style="color: #B73239;font-size: 33px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Training View &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Novel View &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Moving View &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Shaking View &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Novel FOV</span>
 
 		<style>
 			.arrow-icon {
@@ -346,10 +346,23 @@
 			}
 		</style>
 
+	<style>
+		.video-movie {
+	  		border: 5px solid #1ea92e;
+	  		border-radius: 5px;
+		}
+  	</style>
+  	<style>
+		.video-tdmpc {
+		  	border: 5px solid #d41c1c;
+		  	border-radius: 5px;
+		}
+	</style>
 
 
+<span style="color: #dd661b;font-size: 20px;font-weight: bold;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Training View &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Novel View &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Moving View &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Shaking View &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Novel FOV</span>
 
-<div class="content-video" style="margin-bottom: 10px;margin-top: 50px; display: flex; flex-wrap: nowrap;">
+<div class="content-video" style="margin-bottom: 10px;margin-top: 25px; display: flex; flex-wrap: nowrap;">
 	<div class="content-video-container" style="display: flex;">				
 		<div class="content-video-frame large" style="flex: 1;">
 		  <video playsinline="" autoplay="" loop="" preload="" muted="" width="50%">
@@ -368,12 +381,12 @@
 	
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/cheetah-run-fixed-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/cheetah-run-fixed-s.mp4" type="video/mp4">
 		</video>
@@ -381,12 +394,12 @@
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/cheetah-run-moving-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/cheetah-run-moving-s.mp4" type="video/mp4">
 		</video>
@@ -394,12 +407,12 @@
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/cheetah-run-shaking-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/cheetah-run-shaking-s.mp4" type="video/mp4">
 		</video>
@@ -407,12 +420,12 @@
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/cheetah-run-fov-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/cheetah-run-fov-s.mp4" type="video/mp4">
 		</video>
@@ -440,12 +453,12 @@
 	
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/walker-walk-fixed-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/walker-walk-fixed-s.mp4" type="video/mp4">
 		</video>
@@ -453,12 +466,12 @@
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/walker-walk-moving-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/walker-walk-moving-s.mp4" type="video/mp4">
 		</video>
@@ -466,12 +479,12 @@
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/walker-walk-shaking-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/walker-walk-shaking-s.mp4" type="video/mp4">
 		</video>
@@ -479,12 +492,12 @@
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/walker-walk-fov-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/walker-walk-fov-s.mp4" type="video/mp4">
 		</video>
@@ -512,12 +525,12 @@
 	
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/walker-stand-fixed-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/walker-stand-fixed-s.mp4" type="video/mp4">
 		</video>
@@ -525,38 +538,38 @@
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/walker-stand-moving-f.mp4" type="video/mp4">
+		  <source src="videos/walker-stand-moving-b.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/walker-stand-moving-s.mp4" type="video/mp4">
-		</video>
-	  </div>
-	</div>
-  
-	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
-		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/walker-stand-shaking-f.mp4" type="video/mp4">
-		</video>
-	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
-		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/walker-stand-shaking-s.mp4" type="video/mp4">
+		  <source src="videos/walker-stand-moving-o.mp4" type="video/mp4">
 		</video>
 	  </div>
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/walker-stand-shaking-b.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/walker-stand-shaking-o.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/walker-stand-fov-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/walker-stand-fov-s.mp4" type="video/mp4">
 		</video>
@@ -584,38 +597,38 @@
 	
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/walker-run-fixed-f.mp4" type="video/mp4">
+		  <source src="videos/walker-run-fixed-b.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/walker-run-fixed-s.mp4" type="video/mp4">
-		</video>
-	  </div>
-	</div>
-  
-	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
-		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/walker-run-moving-f.mp4" type="video/mp4">
-		</video>
-	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
-		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/walker-run-moving-s.mp4" type="video/mp4">
+		  <source src="videos/walker-run-fixed-o.mp4" type="video/mp4">
 		</video>
 	  </div>
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/walker-run-moving-b.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/walker-run-moving-o.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/walker-run-shaking-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/walker-run-shaking-s.mp4" type="video/mp4">
 		</video>
@@ -623,12 +636,12 @@
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/walker-run-fov-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/walker-run-fov-s.mp4" type="video/mp4">
 		</video>
@@ -656,12 +669,12 @@
 	
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/cup-catch-fixed-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/cup-catch-fixed-s.mp4" type="video/mp4">
 		</video>
@@ -669,12 +682,12 @@
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/cup-catch-moving-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/cup-catch-moving-s.mp4" type="video/mp4">
 		</video>
@@ -682,12 +695,12 @@
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/cup-catch-shaking-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/cup-catch-shaking-s.mp4" type="video/mp4">
 		</video>
@@ -695,12 +708,12 @@
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/cup-catch-fov-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/cup-catch-fov-s.mp4" type="video/mp4">
 		</video>
@@ -728,12 +741,12 @@
 	
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/finger-spin-fixed-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/finger-spin-fixed-s.mp4" type="video/mp4">
 		</video>
@@ -741,12 +754,12 @@
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/finger-spin-moving-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/finger-spin-moving-s.mp4" type="video/mp4">
 		</video>
@@ -754,12 +767,12 @@
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/finger-spin-shaking-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/finger-spin-shaking-s.mp4" type="video/mp4">
 		</video>
@@ -767,12 +780,12 @@
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/finger-spin-fov-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/finger-spin-fov-s.mp4" type="video/mp4">
 		</video>
@@ -800,12 +813,12 @@
 	
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/finger-turn-easy-fixed-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/finger-turn-easy-fixed-s.mp4" type="video/mp4">
 		</video>
@@ -813,12 +826,12 @@
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/finger-turn-easy-moving-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/finger-turn-easy-moving-s.mp4" type="video/mp4">
 		</video>
@@ -826,25 +839,25 @@
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/finger-turn-easy-shaking-f.mp4" type="video/mp4">
+		  <source src="videos/finger-turn-easy-shaking-b.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/finger-turn-easy-shaking-s.mp4" type="video/mp4">
+		  <source src="videos/finger-turn-easy-shaking-o.mp4" type="video/mp4">
 		</video>
 	  </div>
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/finger-turn-easy-fov-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/finger-turn-easy-fov-s.mp4" type="video/mp4">
 		</video>
@@ -872,12 +885,12 @@
 	
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/finger-turn-hard-fixed-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/finger-turn-hard-fixed-s.mp4" type="video/mp4">
 		</video>
@@ -885,25 +898,25 @@
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/finger-turn-hard-moving-f.mp4" type="video/mp4">
+		  <source src="videos/finger-turn-hard-moving-b.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/finger-turn-hard-moving-s.mp4" type="video/mp4">
+		  <source src="videos/finger-turn-hard-moving-o.mp4" type="video/mp4">
 		</video>
 	  </div>
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/finger-turn-hard-shaking-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/finger-turn-hard-shaking-s.mp4" type="video/mp4">
 		</video>
@@ -911,12 +924,12 @@
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/finger-turn-hard-fov-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/finger-turn-hard-fov-s.mp4" type="video/mp4">
 		</video>
@@ -944,12 +957,12 @@
 	
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/pendulum-swingup-fixed-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/pendulum-swingup-fixed-s.mp4" type="video/mp4">
 		</video>
@@ -957,12 +970,12 @@
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/pendulum-swingup-moving-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/pendulum-swingup-moving-s.mp4" type="video/mp4">
 		</video>
@@ -970,25 +983,25 @@
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/pendulum-swingup-shaking-f.mp4" type="video/mp4">
+		  <source src="videos/pendulum-swingup-shaking-b.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/pendulum-swingup-shaking-s.mp4" type="video/mp4">
+		  <source src="videos/pendulum-swingup-shaking-o.mp4" type="video/mp4">
 		</video>
 	  </div>
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/pendulum-swingup-fov-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/pendulum-swingup-fov-s.mp4" type="video/mp4">
 		</video>
@@ -1001,7 +1014,7 @@
 	<div class="content-video-container" style="display: flex;">
 		<div class="content-video-frame large" style="flex: 1;">
 		  <video playsinline="" autoplay="" loop="" preload="" muted="" width="50%">
-			<source src="videos/reach-easy-training.mp4" type="video/mp4">
+			<source src="videos/reacher-easy-training.mp4" type="video/mp4">
 		  </video>
 		</div>
 		
@@ -1016,53 +1029,53 @@
 	
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/reach-easy-fixed-f.mp4" type="video/mp4">
+		  <source src="videos/reacher-easy-fixed-b.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/reach-easy-fixed-s.mp4" type="video/mp4">
-		</video>
-	  </div>
-	</div>
-  
-	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
-		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/reach-easy-moving-f.mp4" type="video/mp4">
-		</video>
-	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
-		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/reach-easy-moving-s.mp4" type="video/mp4">
+		  <source src="videos/reacher-easy-fixed-o.mp4" type="video/mp4">
 		</video>
 	  </div>
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/reach-easy-shaking-f.mp4" type="video/mp4">
+		  <source src="videos/reacher-easy-moving-b.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/reach-easy-shaking-s.mp4" type="video/mp4">
+		  <source src="videos/reacher-easy-moving-o.mp4" type="video/mp4">
 		</video>
 	  </div>
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/reach-easy-fov-f.mp4" type="video/mp4">
+		  <source src="videos/reacher-easy-shaking-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large  video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/reach-easy-fov-s.mp4" type="video/mp4">
+		  <source src="videos/reacher-easy-shaking-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/reacher-easy-fov-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/reacher-easy-fov-s.mp4" type="video/mp4">
 		</video>
 	  </div>
 	</div>
@@ -1073,7 +1086,7 @@
 	<div class="content-video-container" style="display: flex;">
 		<div class="content-video-frame large" style="flex: 1;">
 		  <video playsinline="" autoplay="" loop="" preload="" muted="" width="50%">
-			<source src="videos/xarm-hammerall-training.mp4" type="video/mp4">
+			<source src="videos/reacher-hard-training.mp4" type="video/mp4">
 		  </video>
 		</div>
 		
@@ -1088,57 +1101,60 @@
 	
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/xarm-hammerall-fixed-f.mp4" type="video/mp4">
+		  <source src="videos/reacher-hard-fixed-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/xarm-hammerall-fixed-s.mp4" type="video/mp4">
-		</video>
-	  </div>
-	</div>
-  
-	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
-		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/xarm-hammerall-moving-f.mp4" type="video/mp4">
-		</video>
-	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
-		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/xarm-hammerall-moving-s.mp4" type="video/mp4">
+		  <source src="videos/reacher-hard-fixed-s.mp4" type="video/mp4">
 		</video>
 	  </div>
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/xarm-hammerall-shaking-f.mp4" type="video/mp4">
+		  <source src="videos/reacher-hard-moving-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/xarm-hammerall-shaking-s.mp4" type="video/mp4">
+		  <source src="videos/reacher-hard-moving-s.mp4" type="video/mp4">
 		</video>
 	  </div>
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/xarm-hammerall-fov-f.mp4" type="video/mp4">
+		  <source src="videos/reacher-hard-shaking-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/xarm-hammerall-fov-s.mp4" type="video/mp4">
+		  <source src="videos/reacher-hard-shaking-s.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/reacher-hard-fov-f.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/reacher-hard-fov-s.mp4" type="video/mp4">
 		</video>
 	  </div>
 	</div>
 	
+</div>
+
+
 </div>
 
 
@@ -1150,8 +1166,13 @@
 
 
 
+<div class="hr"></div>
+	<div>
+		<h2>xArm</h2>
 
-<div class="content-video" style="margin-bottom: 10px;margin-top: 50px; display: flex; flex-wrap: nowrap;">
+		<span style="color: #dd661b;font-size: 20px;font-weight: bold;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Training View &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Novel View &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Moving View &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Shaking View &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Novel FOV</span>
+
+<div class="content-video" style="margin-bottom: 10px;margin-top: 25px; display: flex; flex-wrap: nowrap;">
 	<div class="content-video-container" style="display: flex;">				
 		<div class="content-video-frame large" style="flex: 1;">
 		  <video playsinline="" autoplay="" loop="" preload="" muted="" width="50%">
@@ -1170,12 +1191,12 @@
 	
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/xarm-reach-fixed-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/xarm-reach-fixed-s.mp4" type="video/mp4">
 		</video>
@@ -1183,12 +1204,12 @@
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/xarm-reach-moving-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/xarm-reach-moving-s.mp4" type="video/mp4">
 		</video>
@@ -1196,12 +1217,12 @@
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/xarm-reach-shaking-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/xarm-reach-shaking-s.mp4" type="video/mp4">
 		</video>
@@ -1209,12 +1230,12 @@
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/xarm-reach-fov-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/xarm-reach-fov-s.mp4" type="video/mp4">
 		</video>
@@ -1242,12 +1263,12 @@
 	
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/xarm-push-fixed-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/xarm-push-fixed-s.mp4" type="video/mp4">
 		</video>
@@ -1255,12 +1276,12 @@
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/xarm-push-moving-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/xarm-push-moving-s.mp4" type="video/mp4">
 		</video>
@@ -1268,25 +1289,25 @@
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/xarm-push-shaking-f.mp4" type="video/mp4">
+		  <source src="videos/xarm-push-shaking-b.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/xarm-push-shaking-s.mp4" type="video/mp4">
+		  <source src="videos/xarm-push-shaking-o.mp4" type="video/mp4">
 		</video>
 	  </div>
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/xarm-push-fov-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/xarm-push-fov-s.mp4" type="video/mp4">
 		</video>
@@ -1314,12 +1335,12 @@
 	
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/xarm-pegbox-fixed-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/xarm-pegbox-fixed-s.mp4" type="video/mp4">
 		</video>
@@ -1327,12 +1348,12 @@
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/xarm-pegbox-moving-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/xarm-pegbox-moving-s.mp4" type="video/mp4">
 		</video>
@@ -1340,12 +1361,12 @@
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/xarm-pegbox-shaking-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/xarm-pegbox-shaking-s.mp4" type="video/mp4">
 		</video>
@@ -1353,12 +1374,12 @@
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/xarm-pegbox-fov-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/xarm-pegbox-fov-s.mp4" type="video/mp4">
 		</video>
@@ -1386,12 +1407,12 @@
 	
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/xarm-hammerall-fixed-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/xarm-hammerall-fixed-s.mp4" type="video/mp4">
 		</video>
@@ -1399,38 +1420,38 @@
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/xarm-hammerall-moving-f.mp4" type="video/mp4">
+		  <source src="videos/xarm-hammerall-moving-b.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/xarm-hammerall-moving-s.mp4" type="video/mp4">
-		</video>
-	  </div>
-	</div>
-  
-	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
-		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/xarm-hammerall-shaking-f.mp4" type="video/mp4">
-		</video>
-	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
-		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-		  <source src="videos/xarm-hammerall-shaking-s.mp4" type="video/mp4">
+		  <source src="videos/xarm-hammerall-moving-o.mp4" type="video/mp4">
 		</video>
 	  </div>
 	</div>
   
 	<div class="content-video-container" style="display: flex; margin-right: 10px;">
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-hammerall-shaking-b.mp4" type="video/mp4">
+		</video>
+	  </div>
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
+		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+		  <source src="videos/xarm-hammerall-shaking-o.mp4" type="video/mp4">
+		</video>
+	  </div>
+	</div>
+  
+	<div class="content-video-container" style="display: flex; margin-right: 10px;">
+	  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/xarm-hammerall-fov-f.mp4" type="video/mp4">
 		</video>
 	  </div>
-	  <div class="content-video-frame large" style="flex: 1;">
+	  <div class="content-video-frame large video-movie" style="flex: 1;">
 		<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 		  <source src="videos/xarm-hammerall-fov-s.mp4" type="video/mp4">
 		</video>
@@ -1445,10 +1466,12 @@
 
 
 
+<div class="hr"></div>
+	<div>
+		<h2>Adroit</h2>
+		<span style="color: #dd661b;font-size: 20px;font-weight: bold;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Training View &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Novel View &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Moving View &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Shaking View &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Novel FOV</span>
 
-
-
-		<div class="content-video" style="margin-bottom: 10px;margin-top: 50px; display: flex; flex-wrap: nowrap;">
+		<div class="content-video" style="margin-bottom: 10px;margin-top: 25px; display: flex; flex-wrap: nowrap;">	
 			<div class="content-video-container" style="display: flex;">				
 				<div class="content-video-frame large" style="flex: 1;">
 				  <video playsinline="" autoplay="" loop="" preload="" muted="" width="50%">
@@ -1467,12 +1490,12 @@
 			
 		  
 			<div class="content-video-container" style="display: flex; margin-right: 10px;">
-			  <div class="content-video-frame large" style="flex: 1;">
+			  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 				  <source src="videos/adroit-door-fixed-f.mp4" type="video/mp4">
 				</video>
 			  </div>
-			  <div class="content-video-frame large" style="flex: 1;">
+			  <div class="content-video-frame large video-movie" style="flex: 1;">
 				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 				  <source src="videos/adroit-door-fixed-s.mp4" type="video/mp4">
 				</video>
@@ -1480,12 +1503,12 @@
 			</div>
 		  
 			<div class="content-video-container" style="display: flex; margin-right: 10px;">
-			  <div class="content-video-frame large" style="flex: 1;">
+			  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 				  <source src="videos/adroit-door-moving-f.mp4" type="video/mp4">
 				</video>
 			  </div>
-			  <div class="content-video-frame large" style="flex: 1;">
+			  <div class="content-video-frame large video-movie" style="flex: 1;">
 				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 				  <source src="videos/adroit-door-moving-s.mp4" type="video/mp4">
 				</video>
@@ -1493,12 +1516,12 @@
 			</div>
 		  
 			<div class="content-video-container" style="display: flex; margin-right: 10px;">
-			  <div class="content-video-frame large" style="flex: 1;">
+			  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 				  <source src="videos/adroit-door-shaking-f.mp4" type="video/mp4">
 				</video>
 			  </div>
-			  <div class="content-video-frame large" style="flex: 1;">
+			  <div class="content-video-frame large video-movie" style="flex: 1;">
 				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 				  <source src="videos/adroit-door-shaking-s.mp4" type="video/mp4">
 				</video>
@@ -1506,12 +1529,12 @@
 			</div>
 		  
 			<div class="content-video-container" style="display: flex; margin-right: 10px;">
-			  <div class="content-video-frame large" style="flex: 1;">
+			  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 				  <source src="videos/adroit-door-fov-f.mp4" type="video/mp4">
 				</video>
 			  </div>
-			  <div class="content-video-frame large" style="flex: 1;">
+			  <div class="content-video-frame large video-movie" style="flex: 1;">
 			    <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 				  <source src="videos/adroit-door-fov-s.mp4" type="video/mp4">
 			    </video>
@@ -1539,12 +1562,12 @@
 			
 		  
 			<div class="content-video-container" style="display: flex; margin-right: 10px;">
-			  <div class="content-video-frame large" style="flex: 1;">
+			  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 				  <source src="videos/adroit-hammer-fixed-f.mp4" type="video/mp4">
 				</video>
 			  </div>
-			  <div class="content-video-frame large" style="flex: 1;">
+			  <div class="content-video-frame large video-movie" style="flex: 1;">
 				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 				  <source src="videos/adroit-hammer-fixed-s.mp4" type="video/mp4">
 				</video>
@@ -1552,12 +1575,12 @@
 			</div>
 		  
 			<div class="content-video-container" style="display: flex; margin-right: 10px;">
-			  <div class="content-video-frame large" style="flex: 1;">
+			  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 				  <source src="videos/adroit-hammer-moving-f.mp4" type="video/mp4">
 				</video>
 			  </div>
-			  <div class="content-video-frame large" style="flex: 1;">
+			  <div class="content-video-frame large video-movie" style="flex: 1;">
 				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 				  <source src="videos/adroit-hammer-moving-s.mp4" type="video/mp4">
 				</video>
@@ -1565,12 +1588,12 @@
 			</div>
 		  
 			<div class="content-video-container" style="display: flex; margin-right: 10px;">
-			  <div class="content-video-frame large" style="flex: 1;">
+			  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 				  <source src="videos/adroit-hammer-shaking-f.mp4" type="video/mp4">
 				</video>
 			  </div>
-			  <div class="content-video-frame large" style="flex: 1;">
+			  <div class="content-video-frame large video-movie" style="flex: 1;">
 				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 				  <source src="videos/adroit-hammer-shaking-s.mp4" type="video/mp4">
 				</video>
@@ -1578,12 +1601,12 @@
 			</div>
 		  
 			<div class="content-video-container" style="display: flex; margin-right: 10px;">
-			  <div class="content-video-frame large" style="flex: 1;">
+			  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 				  <source src="videos/adroit-hammer-fov-f.mp4" type="video/mp4">
 				</video>
 			  </div>
-			  <div class="content-video-frame large" style="flex: 1;">
+			  <div class="content-video-frame large video-movie" style="flex: 1;">
 			    <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 				  <source src="videos/adroit-hammer-fov-s.mp4" type="video/mp4">
 			    </video>
@@ -1611,12 +1634,12 @@
 			
 		  
 			<div class="content-video-container" style="display: flex; margin-right: 10px;">
-			  <div class="content-video-frame large" style="flex: 1;">
+			  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 				  <source src="videos/adroit-pen-fixed-f.mp4" type="video/mp4">
 				</video>
 			  </div>
-			  <div class="content-video-frame large" style="flex: 1;">
+			  <div class="content-video-frame large video-movie" style="flex: 1;">
 				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 				  <source src="videos/adroit-pen-fixed-s.mp4" type="video/mp4">
 				</video>
@@ -1624,25 +1647,25 @@
 			</div>
 		  
 			<div class="content-video-container" style="display: flex; margin-right: 10px;">
-			  <div class="content-video-frame large" style="flex: 1;">
+			  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-				  <source src="videos/adroit-pen-moving-f.mp4" type="video/mp4">
+				  <source src="videos/adroit-pen-moving-b.mp4" type="video/mp4">
 				</video>
 			  </div>
-			  <div class="content-video-frame large" style="flex: 1;">
+			  <div class="content-video-frame large video-movie" style="flex: 1;">
 				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-				  <source src="videos/adroit-pen-moving-s.mp4" type="video/mp4">
+				  <source src="videos/adroit-pen-moving-o.mp4" type="video/mp4">
 				</video>
 			  </div>
 			</div>
 		  
 			<div class="content-video-container" style="display: flex; margin-right: 10px;">
-			  <div class="content-video-frame large" style="flex: 1;">
+			  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 				  <source src="videos/adroit-pen-shaking-f.mp4" type="video/mp4">
 				</video>
 			  </div>
-			  <div class="content-video-frame large" style="flex: 1;">
+			  <div class="content-video-frame large video-movie" style="flex: 1;">
 				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 				  <source src="videos/adroit-pen-shaking-s.mp4" type="video/mp4">
 				</video>
@@ -1650,12 +1673,12 @@
 			</div>
 		  
 			<div class="content-video-container" style="display: flex; margin-right: 10px;">
-			  <div class="content-video-frame large" style="flex: 1;">
+			  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
 				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 				  <source src="videos/adroit-pen-fov-f.mp4" type="video/mp4">
 				</video>
 			  </div>
-			  <div class="content-video-frame large" style="flex: 1;">
+			  <div class="content-video-frame large video-movie" style="flex: 1;">
 			    <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
 				  <source src="videos/adroit-pen-fov-s.mp4" type="video/mp4">
 			    </video>
@@ -1663,7 +1686,7 @@
 		    </div>
 			
 		</div>
-
+	</div>
 
 		
 
@@ -1691,6 +1714,7 @@
 			</div>
 		</div> -->
 	</div>
+
 	<div class="hr"></div>
 	<div>
 		<h2>Humanoid</h2>
