@@ -35,6 +35,8 @@ table.authors a {padding: 6px 0; display: inline-block; font-weight: normal; fon
 table.authors .authors-affiliation {display: block; font-size: 1.2em;}
 a.btn {display: inline-block; min-width: 70px; font-family: "Google Sans", sans-serif; background-color:  rgb(47, 47, 47); color: white; padding: 8px 18px; font-size: 1.1em; font-weight: normal; border-radius: 32px;}
 a.btn:hover {background-color:  rgb(54, 54, 54);}
+btn {display: inline-block; min-width: 70px; font-family: "Google Sans", sans-serif; background-color:  rgb(47, 47, 47); color: white; padding: 8px 18px; font-size: 1.1em; font-weight: normal; border-radius: 32px;}
+btn:hover {background-color:  rgb(54, 54, 54);}
 .bibtexsection {padding: 4px 16px; font-family: "Courier", monospace; font-size: 15px; white-space: pre; background-color: #f4f4f4; text-align: left;}
 .noselect {-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
 .bold {font-weight: bold;}
