@@ -328,6 +328,119 @@
 		</p>
 	</div>
 	<div class="figure" style="height: 180px; background-image: url(figures/bar_chart.png);"></div>
+
+
+	<div class="hr"></div>
+	<div>
+		<h2>Feature Visualization</h2>
+
+		<div style="text-align: right;margin-top: -50;">
+			<ul style="display: inline-block;">
+				<li style="color: rgb(32, 156, 238); text-align: center; font-size: 20px; font-weight: bold; list-style-type: disc;">MoVie</li>
+				<li style="color: rgb(255, 153, 0); text-align: center; font-size: 20px; font-weight: bold; list-style-type: disc;">TD-MPC</li>
+							
+				<!-- <li style="color: rgb(255, 153, 0);text-align: left;"><span style="font-size: 15px;font-weight: bold; color:#000000">The <span style="font-weight: bolder; color:rgb(255, 153, 0)">orange box</span> indicates the policy visualization of <span style="font-weight: bolder; color:rgb(255, 153, 0)">TD-MPC</span>.</span></li>
+				<li style="color: rgb(32, 156, 238);text-align: left;"><span style="font-size: 15px;font-weight: bold; color:#000000">The <span style="font-weight: bolder; color:rgb(32, 156, 238)">blue box</span> indicates the policy visualization of <span style="font-weight: bolder; color:rgb(32, 156, 238)">MoVie</span>.</span></li> -->
+			</ul>
+			</div>
+			
+			
+		<br>
+
+		<!-- <span style="color: #000000;font-size: 20px;font-weight: bold;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Training View &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Novel View &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Moving View &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Shaking View &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Novel FOV</span> -->
+
+		<div class="content-video" style="margin-bottom: 10px;margin-top: 25px; display: flex; flex-wrap: nowrap;">	
+			<div style="writing-mode: vertical-rl;margin: auto;display: flex;align-items: center;margin-right: -70px;"> 
+				<p  style="transform: rotate(180deg);color: #000000;font-size: 20px;font-weight: bold;">Door</p>
+			</div>
+			<div class="content-video-container" style="display: flex;position: relative;">
+				<div style="position: absolute; top: -40%; left: 50%; transform: translateX(-50%); text-align: center;">
+					<p style="color: #000000;font-size: 20px;font-weight: bold;">Training View</p>
+				</div>				
+				<div class="content-video-frame large" style="flex: 1;">
+				  <video playsinline="" autoplay="" loop="" preload="" muted="" width="50%">
+					<source src="videos/feature-training_rs.mp4" type="video/mp4">
+				  </video>
+				</div>
+				
+			</div>
+
+			<div class="arrow-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+				  <line x1="0" y1="30" x2="30" y2="30"></line>
+				  <polyline points="30 25 50 30 30 35"></polyline>
+				</svg>
+			</div>
+			
+		  
+			<div class="content-video-container" style="display: flex; margin-right: 18px;position: relative;">
+				<div style="position: absolute; top: -40%; left: 50%; transform: translateX(-50%); text-align: center;">
+					<p style="color: #000000;font-size: 20px;font-weight: bold;">Novel View</p>
+				</div>
+			  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
+				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/feature-fixed-f_rs.mp4" type="video/mp4">
+				</video>
+			  </div>
+			  <div class="content-video-frame large video-movie" style="flex: 1;">
+				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/feature-fixed-s_rs.mp4" type="video/mp4">
+				</video>
+			  </div>
+			</div>
+		  
+			<div class="content-video-container" style="display: flex; margin-right: 18px;position: relative;">
+				<div style="position: absolute; top: -40%; left: 50%; transform: translateX(-50%); text-align: center;">
+					<p style="color: #000000;font-size: 20px;font-weight: bold;">Moving View</p>
+				</div>
+			  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
+				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/feature-moving-f_rs.mp4" type="video/mp4">
+				</video>
+			  </div>
+			  <div class="content-video-frame large video-movie" style="flex: 1;">
+				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/feature-moving-s_rs.mp4" type="video/mp4">
+				</video>
+			  </div>
+			</div>
+		  
+			<div class="content-video-container" style="display: flex; margin-right: 18px;position: relative;">
+				<div style="position: absolute; top: -40%; left: 50%; transform: translateX(-50%); text-align: center;">
+					<p style="color: #000000;font-size: 20px;font-weight: bold;">Shaking View</p>
+				</div>
+			  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
+				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/feature-shaking-f_rs.mp4" type="video/mp4">
+				</video>
+			  </div>
+			  <div class="content-video-frame large video-movie" style="flex: 1;">
+				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/feature-shaking-s_rs.mp4" type="video/mp4">
+				</video>
+			  </div>
+			</div>
+		  
+			<div class="content-video-container" style="display: flex; margin-right: 18px;position: relative;">
+				<div style="position: absolute; top: -40%; left: 50%; transform: translateX(-50%); text-align: center;">
+					<p style="color: #000000;font-size: 20px;font-weight: bold;">Novel FOV</p>
+				</div>
+			  <div class="content-video-frame large video-tdmpc" style="flex: 1;">
+				<video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/feature-fov-f_rs.mp4" type="video/mp4">
+				</video>
+			  </div>
+			  <div class="content-video-frame large video-movie" style="flex: 1;">
+			    <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+				  <source src="videos/feature-fov-s_rs.mp4" type="video/mp4">
+			    </video>
+			  </div>
+		    </div>
+
+		</div>
+	</div>
+
+
 	<div class="hr"></div>
 	<div>
 		<h2>DM-Control</h2>
